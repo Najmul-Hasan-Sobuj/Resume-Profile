@@ -19,7 +19,7 @@ class AdminSeeder extends Seeder
         $admin = Admin::factory()->create([
             'name' => 'admin',
             'email' => 'admin@gmail.com',
-            'password' => Hash::make('admin1234'),
+            'password' => Hash::make('admin693'),
         ]);
 
         $adminRole = Role::where('name', 'admin')->first();
