@@ -89,7 +89,17 @@ class RolePermissionSeeder extends Seeder
                     'password.update',
                 ]
             ],
-            // Add other permission groups as needed
+            [
+                'group_name' => 'Resume Profile Management',
+                'permissions' => [
+                    'resume-profile.index',
+                    'resume-profile.create',
+                    'resume-profile.show',
+                    'resume-profile.edit',
+                    'resume-profile.update',
+                    'resume-profile.approve',
+                ]
+            ],
         ];
 
         // Create admin role for the 'admin' guard
@@ -116,6 +126,8 @@ class RolePermissionSeeder extends Seeder
         // Assign admin role to admin user
         if ($admin) {
             $admin->assignRole($roleAdmin);
+        } else {
+            $this->command->error('Admin user not found. Run AdminSeeder first.');
         }
     }
 }

@@ -20,6 +20,7 @@ use App\Http\Controllers\Admin\ConfirmablePasswordController;
 use App\Http\Controllers\Admin\AuthenticatedSessionController;
 use App\Http\Controllers\Admin\EmailVerificationPromptController;
 use App\Http\Controllers\Admin\EmailVerificationNotificationController;
+use App\Http\Controllers\Admin\ResumeProfileController;
 
 // Route::get('/', function () {
 //     return Redirect::route('admin.dashboard');
@@ -81,6 +82,8 @@ Route::middleware('auth:admin')->prefix('admin')->name('admin.')->group(function
     Route::resource('category', CategoryController::class);
     Route::post('/category/toggle-status/{id}', [CategoryController::class, 'toggleStatus'])->name('category.toggle-status');
 
+    Route::resource('resume-profiles', ResumeProfileController::class);
+    Route::post('/resume-profile/toggle-status/{resumeProfile}', [ResumeProfileController::class, 'toggleStatus'])->name('resume.profile.toggle.status');
 
     Route::put('email-settings', [SettingController::class, 'emailUpdate'])->name('email.update');
     Route::post('email-settings/send-test-email', [SettingController::class, 'sendTestEmail'])->name('email.sendTest');
