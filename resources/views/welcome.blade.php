@@ -248,7 +248,7 @@
 
                     <!-- Displaying the profile picture dynamically -->
                     <div class="-mx-5 mt-10 lg:-mx-16">
-                        <img src="{{ asset($resumeProfile->photo) }}" class="inline-block lg:rounded-sm"
+                        <img src="{{ asset('storage/' . $resumeProfile->photo) }}" class="inline-block lg:rounded-sm"
                             alt="{{ $resumeProfile->first_name }} {{ $resumeProfile->last_name }} photo" />
                     </div>
 
