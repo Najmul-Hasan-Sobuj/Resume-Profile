@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Frondend;
 
-use App\Models\Admin\PrivacyPolicy;
 use App\Http\Controllers\Controller;
-use App\Models\Admin\TermsAndCondition;
+use App\Http\Resources\Admin\ResumeProfileResource;
+use App\Models\Admin\ResumeProfile;
 
 class FrontendController extends Controller
 {
@@ -13,23 +13,9 @@ class FrontendController extends Controller
      */
     public function index()
     {
+        $resumeProfile = ResumeProfile::whereIsApproved(1)->first();
         return view('welcome', [
-            'termsAndCondition' => TermsAndCondition::first(),
-            'privacyPolicy'     => PrivacyPolicy::first(),
-        ]);
-    }
-
-    public function privacyPolicy()
-    {
-        return view('privacyPolicy', [
-            'privacyPolicy' => PrivacyPolicy::first(),
-        ]);
-    }
-
-    public function termsAndCondition()
-    {
-        return view('termsAndServices', [
-            'termsAndCondition' => termsAndCondition::first(),
+            'resumeProfile' => new ResumeProfileResource($resumeProfile)
         ]);
     }
 }

@@ -94,135 +94,462 @@
                         <x-input-error :messages="$errors->get('website')" class="mt-2" />
                     </div>
 
-                    <!-- Degree -->
+                    <!-- Degree One -->
                     <div>
-                        <x-input-label for="degree" :value="__('Degree')" />
-                        <x-text-input id="degree" class="block mt-1 w-full" type="text" name="degree"
-                            :value="old('degree')" required />
-                        <x-input-error :messages="$errors->get('degree')" class="mt-2" />
+                        <x-input-label for="degree_one" :value="__('Degree One')" />
+                        <x-text-input id="degree_one" class="block mt-1 w-full" type="text" name="degree_one"
+                            :value="old('degree_one')" required />
+                        <x-input-error :messages="$errors->get('degree_one')" class="mt-2" />
                     </div>
 
-                    <!-- Institution -->
+                    <!-- Institution One -->
                     <div>
-                        <x-input-label for="institution" :value="__('Institution')" />
-                        <x-text-input id="institution" class="block mt-1 w-full" type="text" name="institution"
-                            :value="old('institution')" required />
-                        <x-input-error :messages="$errors->get('institution')" class="mt-2" />
+                        <x-input-label for="institution_one" :value="__('Institution One')" />
+                        <x-text-input id="institution_one" class="block mt-1 w-full" type="text"
+                            name="institution_one" :value="old('institution_one')" required />
+                        <x-input-error :messages="$errors->get('institution_one')" class="mt-2" />
                     </div>
 
-                    <!-- Start Year -->
+                    <!-- Start Year One -->
                     <div>
-                        <x-input-label for="start_year" :value="__('Start Year')" />
-                        <x-text-input id="start_year" class="block mt-1 w-full" type="number" name="start_year"
-                            :value="old('start_year')" required />
-                        <x-input-error :messages="$errors->get('start_year')" class="mt-2" />
+                        <x-input-label for="start_year_one" :value="__('Start Year One')" />
+                        <x-text-input id="start_year_one" class="block mt-1 w-full" type="number" name="start_year_one"
+                            :value="old('start_year_one')" required />
+                        <x-input-error :messages="$errors->get('start_year_one')" class="mt-2" />
                     </div>
 
-                    <!-- End Year -->
+                    <!-- End Year One -->
                     <div>
-                        <x-input-label for="end_year" :value="__('End Year')" />
-                        <x-text-input id="end_year" class="block mt-1 w-full" type="number" name="end_year"
-                            :value="old('end_year')" />
-                        <x-input-error :messages="$errors->get('end_year')" class="mt-2" />
+                        <x-input-label for="end_year_one" :value="__('End Year One')" />
+                        <x-text-input id="end_year_one" class="block mt-1 w-full" type="number" name="end_year_one"
+                            :value="old('end_year_one')" />
+                        <x-input-error :messages="$errors->get('end_year_one')" class="mt-2" />
                     </div>
 
-                    <!-- Work Position -->
+                    <!-- Degree Two -->
                     <div>
-                        <x-input-label for="work_position" :value="__('Work Position')" />
-                        <x-text-input id="work_position" class="block mt-1 w-full" type="text" name="work_position"
-                            :value="old('work_position')" required />
-                        <x-input-error :messages="$errors->get('work_position')" class="mt-2" />
+                        <x-input-label for="degree_two" :value="__('Degree Two')" />
+                        <x-text-input id="degree_two" class="block mt-1 w-full" type="text" name="degree_two"
+                            :value="old('degree_two')" required />
+                        <x-input-error :messages="$errors->get('degree_two')" class="mt-2" />
                     </div>
 
-                    <!-- Company -->
+                    <!-- Institution Two -->
                     <div>
-                        <x-input-label for="company" :value="__('Company')" />
-                        <x-text-input id="company" class="block mt-1 w-full" type="text" name="company"
-                            :value="old('company')" required />
-                        <x-input-error :messages="$errors->get('company')" class="mt-2" />
+                        <x-input-label for="institution_two" :value="__('Institution Two')" />
+                        <x-text-input id="institution_two" class="block mt-1 w-full" type="text"
+                            name="institution_two" :value="old('institution_two')" required />
+                        <x-input-error :messages="$errors->get('institution_two')" class="mt-2" />
                     </div>
 
-                    <!-- Work Start Year -->
+                    <!-- Start Year Two -->
                     <div>
-                        <x-input-label for="work_start_year" :value="__('Work Start Year')" />
-                        <x-text-input id="work_start_year" class="block mt-1 w-full" type="number"
-                            name="work_start_year" :value="old('work_start_year')" required />
-                        <x-input-error :messages="$errors->get('work_start_year')" class="mt-2" />
+                        <x-input-label for="start_year_two" :value="__('Start Year Two')" />
+                        <x-text-input id="start_year_two" class="block mt-1 w-full" type="number"
+                            name="start_year_two" :value="old('start_year_two')" required />
+                        <x-input-error :messages="$errors->get('start_year_two')" class="mt-2" />
                     </div>
 
-                    <!-- Work End Year -->
+                    <!-- End Year Two -->
                     <div>
-                        <x-input-label for="work_end_year" :value="__('Work End Year')" />
-                        <x-text-input id="work_end_year" class="block mt-1 w-full" type="number"
-                            name="work_end_year" :value="old('work_end_year')" />
-                        <x-input-error :messages="$errors->get('work_end_year')" class="mt-2" />
+                        <x-input-label for="end_year_two" :value="__('End Year Two')" />
+                        <x-text-input id="end_year_two" class="block mt-1 w-full" type="number" name="end_year_two"
+                            :value="old('end_year_two')" />
+                        <x-input-error :messages="$errors->get('end_year_two')" class="mt-2" />
                     </div>
 
-                    <!-- Work Description -->
+                    <!-- Degree Three -->
+                    <div>
+                        <x-input-label for="degree_three" :value="__('Degree Three')" />
+                        <x-text-input id="degree_three" class="block mt-1 w-full" type="text" name="degree_three"
+                            :value="old('degree_three')" required />
+                        <x-input-error :messages="$errors->get('degree_three')" class="mt-2" />
+                    </div>
+
+                    <!-- Institution Three -->
+                    <div>
+                        <x-input-label for="institution_three" :value="__('Institution Three')" />
+                        <x-text-input id="institution_three" class="block mt-1 w-full" type="text"
+                            name="institution_three" :value="old('institution_three')" required />
+                        <x-input-error :messages="$errors->get('institution_three')" class="mt-2" />
+                    </div>
+
+                    <!-- Start Year Three -->
+                    <div>
+                        <x-input-label for="start_year_three" :value="__('Start Year Three')" />
+                        <x-text-input id="start_year_three" class="block mt-1 w-full" type="number"
+                            name="start_year_three" :value="old('start_year_three')" required />
+                        <x-input-error :messages="$errors->get('start_year_three')" class="mt-2" />
+                    </div>
+
+                    <!-- End Year Three -->
+                    <div>
+                        <x-input-label for="end_year_three" :value="__('End Year Three')" />
+                        <x-text-input id="end_year_three" class="block mt-1 w-full" type="number"
+                            name="end_year_three" :value="old('end_year_three')" />
+                        <x-input-error :messages="$errors->get('end_year_three')" class="mt-2" />
+                    </div>
+
+                    <!-- Work Position One -->
+                    <div>
+                        <x-input-label for="work_position_one" :value="__('Work Position One')" />
+                        <x-text-input id="work_position_one" class="block mt-1 w-full" type="text"
+                            name="work_position_one" :value="old('work_position_one')" required />
+                        <x-input-error :messages="$errors->get('work_position_one')" class="mt-2" />
+                    </div>
+
+                    <!-- Company One -->
+                    <div>
+                        <x-input-label for="company_one" :value="__('Company One')" />
+                        <x-text-input id="company_one" class="block mt-1 w-full" type="text" name="company_one"
+                            :value="old('company_one')" required />
+                        <x-input-error :messages="$errors->get('company_one')" class="mt-2" />
+                    </div>
+
+                    <!-- Work Start Year One -->
+                    <div>
+                        <x-input-label for="work_start_year_one" :value="__('Work Start Year One')" />
+                        <x-text-input id="work_start_year_one" class="block mt-1 w-full" type="number"
+                            name="work_start_year_one" :value="old('work_start_year_one')" required />
+                        <x-input-error :messages="$errors->get('work_start_year_one')" class="mt-2" />
+                    </div>
+
+                    <!-- Work End Year One -->
+                    <div>
+                        <x-input-label for="work_end_year_one" :value="__('Work End Year One')" />
+                        <x-text-input id="work_end_year_one" class="block mt-1 w-full" type="number"
+                            name="work_end_year_one" :value="old('work_end_year_one')" />
+                        <x-input-error :messages="$errors->get('work_end_year_one')" class="mt-2" />
+                    </div>
+
+                    <!-- Work Description One -->
                     <div class="col-span-2">
-                        <x-input-label for="work_description" :value="__('Work Description')" />
-                        <textarea id="work_description"
+                        <x-input-label for="work_description_one" :value="__('Work Description One')" />
+                        <textarea id="work_description_one"
                             class="form-input w-full text-gray-800 rounded-md bg-gray-50 border border-gray-300 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-300 p-2 transition duration-200 ease-in-out shadow-sm hover:border-blue-400"
-                            name="work_description" required>{{ old('work_description') }}</textarea>
-                        <x-input-error :messages="$errors->get('work_description')" class="mt-2" />
+                            name="work_description_one" required>{{ old('work_description_one') }}</textarea>
+                        <x-input-error :messages="$errors->get('work_description_one')" class="mt-2" />
                     </div>
 
-                    <!-- Project Title -->
+                    <!-- Work Position Two -->
                     <div>
-                        <x-input-label for="project_title" :value="__('Project Title')" />
-                        <x-text-input id="project_title" class="block mt-1 w-full" type="text"
-                            name="project_title" :value="old('project_title')" required />
-                        <x-input-error :messages="$errors->get('project_title')" class="mt-2" />
+                        <x-input-label for="work_position_two" :value="__('Work Position Two')" />
+                        <x-text-input id="work_position_two" class="block mt-1 w-full" type="text"
+                            name="work_position_two" :value="old('work_position_two')" required />
+                        <x-input-error :messages="$errors->get('work_position_two')" class="mt-2" />
                     </div>
 
-                    <!-- Project Technologies -->
+                    <!-- Company Two -->
                     <div>
-                        <x-input-label for="project_technologies" :value="__('Project Technologies')" />
-                        <x-text-input id="project_technologies" class="block mt-1 w-full" type="text"
-                            name="project_technologies" :value="old('project_technologies')" required />
-                        <x-input-error :messages="$errors->get('project_technologies')" class="mt-2" />
+                        <x-input-label for="company_two" :value="__('Company Two')" />
+                        <x-text-input id="company_two" class="block mt-1 w-full" type="text" name="company_two"
+                            :value="old('company_two')" required />
+                        <x-input-error :messages="$errors->get('company_two')" class="mt-2" />
                     </div>
 
-                    <!-- Project URL -->
+                    <!-- Work Start Year Two -->
                     <div>
-                        <x-input-label for="project_url" :value="__('Project URL')" />
-                        <x-text-input id="project_url" class="block mt-1 w-full" type="url" name="project_url"
-                            :value="old('project_url')" />
-                        <x-input-error :messages="$errors->get('project_url')" class="mt-2" />
+                        <x-input-label for="work_start_year_two" :value="__('Work Start Year Two')" />
+                        <x-text-input id="work_start_year_two" class="block mt-1 w-full" type="number"
+                            name="work_start_year_two" :value="old('work_start_year_two')" required />
+                        <x-input-error :messages="$errors->get('work_start_year_two')" class="mt-2" />
                     </div>
 
-                    <!-- Project Description -->
+                    <!-- Work End Year Two -->
+                    <div>
+                        <x-input-label for="work_end_year_two" :value="__('Work End Year Two')" />
+                        <x-text-input id="work_end_year_two" class="block mt-1 w-full" type="number"
+                            name="work_end_year_two" :value="old('work_end_year_two')" />
+                        <x-input-error :messages="$errors->get('work_end_year_two')" class="mt-2" />
+                    </div>
+
+                    <!-- Work Description Two -->
                     <div class="col-span-2">
-                        <x-input-label for="project_description" :value="__('Project Description')" />
-                        <textarea id="project_description"
+                        <x-input-label for="work_description_two" :value="__('Work Description Two')" />
+                        <textarea id="work_description_two"
                             class="form-input w-full text-gray-800 rounded-md bg-gray-50 border border-gray-300 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-300 p-2 transition duration-200 ease-in-out shadow-sm hover:border-blue-400"
-                            name="project_description" required>{{ old('project_description') }}</textarea>
-                        <x-input-error :messages="$errors->get('project_description')" class="mt-2" />
+                            name="work_description_two" required>{{ old('work_description_two') }}</textarea>
+                        <x-input-error :messages="$errors->get('work_description_two')" class="mt-2" />
                     </div>
 
-                    <!-- Social Platform -->
+                    <!-- Work Position Three -->
                     <div>
-                        <x-input-label for="social_platform" :value="__('Social Platform')" />
-                        <x-text-input id="social_platform" class="block mt-1 w-full" type="text"
-                            name="social_platform" :value="old('social_platform')" required />
-                        <x-input-error :messages="$errors->get('social_platform')" class="mt-2" />
+                        <x-input-label for="work_position_three" :value="__('Work Position Three')" />
+                        <x-text-input id="work_position_three" class="block mt-1 w-full" type="text"
+                            name="work_position_three" :value="old('work_position_three')" required />
+                        <x-input-error :messages="$errors->get('work_position_three')" class="mt-2" />
                     </div>
 
-                    <!-- Social Profile Type -->
+                    <!-- Company Three -->
                     <div>
-                        <x-input-label for="social_profile_type" :value="__('Social Profile Type')" />
-                        <x-text-input id="social_profile_type" class="block mt-1 w-full" type="text"
-                            name="social_profile_type" :value="old('social_profile_type')" required />
-                        <x-input-error :messages="$errors->get('social_profile_type')" class="mt-2" />
+                        <x-input-label for="company_three" :value="__('Company Three')" />
+                        <x-text-input id="company_three" class="block mt-1 w-full" type="text"
+                            name="company_three" :value="old('company_three')" required />
+                        <x-input-error :messages="$errors->get('company_three')" class="mt-2" />
                     </div>
 
-                    <!-- Social URL -->
+                    <!-- Work Start Year Three -->
                     <div>
-                        <x-input-label for="social_url" :value="__('Social URL')" />
-                        <x-text-input id="social_url" class="block mt-1 w-full" type="url" name="social_url"
-                            :value="old('social_url')" />
-                        <x-input-error :messages="$errors->get('social_url')" class="mt-2" />
+                        <x-input-label for="work_start_year_three" :value="__('Work Start Year Three')" />
+                        <x-text-input id="work_start_year_three" class="block mt-1 w-full" type="number"
+                            name="work_start_year_three" :value="old('work_start_year_three')" required />
+                        <x-input-error :messages="$errors->get('work_start_year_three')" class="mt-2" />
                     </div>
+
+                    <!-- Work End Year Three -->
+                    <div>
+                        <x-input-label for="work_end_year_three" :value="__('Work End Year Three')" />
+                        <x-text-input id="work_end_year_three" class="block mt-1 w-full" type="number"
+                            name="work_end_year_three" :value="old('work_end_year_three')" />
+                        <x-input-error :messages="$errors->get('work_end_year_three')" class="mt-2" />
+                    </div>
+
+                    <!-- Work Description Three -->
+                    <div class="col-span-2">
+                        <x-input-label for="work_description_three" :value="__('Work Description Three')" />
+                        <textarea id="work_description_three"
+                            class="form-input w-full text-gray-800 rounded-md bg-gray-50 border border-gray-300 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-300 p-2 transition duration-200 ease-in-out shadow-sm hover:border-blue-400"
+                            name="work_description_three" required>{{ old('work_description_three') }}</textarea>
+                        <x-input-error :messages="$errors->get('work_description_three')" class="mt-2" />
+                    </div>
+
+                    <!-- Project Title One -->
+                    <div>
+                        <x-input-label for="project_title_one" :value="__('Project Title One')" />
+                        <x-text-input id="project_title_one" class="block mt-1 w-full" type="text"
+                            name="project_title_one" :value="old('project_title_one')" required />
+                        <x-input-error :messages="$errors->get('project_title_one')" class="mt-2" />
+                    </div>
+
+                    <!-- Project Technologies One -->
+                    <div>
+                        <x-input-label for="project_technologies_one" :value="__('Project Technologies One')" />
+                        <x-text-input id="project_technologies_one" class="block mt-1 w-full" type="text"
+                            name="project_technologies_one" :value="old('project_technologies_one')" required />
+                        <x-input-error :messages="$errors->get('project_technologies_one')" class="mt-2" />
+                    </div>
+
+                    <!-- Project URL One -->
+                    <div>
+                        <x-input-label for="project_url_one" :value="__('Project URL One')" />
+                        <x-text-input id="project_url_one" class="block mt-1 w-full" type="url"
+                            name="project_url_one" :value="old('project_url_one')" />
+                        <x-input-error :messages="$errors->get('project_url_one')" class="mt-2" />
+                    </div>
+
+                    <!-- Project Description One -->
+                    <div class="col-span-2">
+                        <x-input-label for="project_description_one" :value="__('Project Description One')" />
+                        <textarea id="project_description_one"
+                            class="form-input w-full text-gray-800 rounded-md bg-gray-50 border border-gray-300 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-300 p-2 transition duration-200 ease-in-out shadow-sm hover:border-blue-400"
+                            name="project_description_one" required>{{ old('project_description_one') }}</textarea>
+                        <x-input-error :messages="$errors->get('project_description_one')" class="mt-2" />
+                    </div>
+
+                    <!-- Project Title Two -->
+                    <div>
+                        <x-input-label for="project_title_two" :value="__('Project Title Two')" />
+                        <x-text-input id="project_title_two" class="block mt-1 w-full" type="text"
+                            name="project_title_two" :value="old('project_title_two')" required />
+                        <x-input-error :messages="$errors->get('project_title_two')" class="mt-2" />
+                    </div>
+
+                    <!-- Project Technologies Two -->
+                    <div>
+                        <x-input-label for="project_technologies_two" :value="__('Project Technologies Two')" />
+                        <x-text-input id="project_technologies_two" class="block mt-1 w-full" type="text"
+                            name="project_technologies_two" :value="old('project_technologies_two')" required />
+                        <x-input-error :messages="$errors->get('project_technologies_two')" class="mt-2" />
+                    </div>
+
+                    <!-- Project URL Two -->
+                    <div>
+                        <x-input-label for="project_url_two" :value="__('Project URL Two')" />
+                        <x-text-input id="project_url_two" class="block mt-1 w-full" type="url"
+                            name="project_url_two" :value="old('project_url_two')" />
+                        <x-input-error :messages="$errors->get('project_url_two')" class="mt-2" />
+                    </div>
+
+                    <!-- Project Description Two -->
+                    <div class="col-span-2">
+                        <x-input-label for="project_description_two" :value="__('Project Description Two')" />
+                        <textarea id="project_description_two"
+                            class="form-input w-full text-gray-800 rounded-md bg-gray-50 border border-gray-300 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-300 p-2 transition duration-200 ease-in-out shadow-sm hover:border-blue-400"
+                            name="project_description_two" required>{{ old('project_description_two') }}</textarea>
+                        <x-input-error :messages="$errors->get('project_description_two')" class="mt-2" />
+                    </div>
+
+                    <!-- Project Title Three -->
+                    <div>
+                        <x-input-label for="project_title_three" :value="__('Project Title Three')" />
+                        <x-text-input id="project_title_three" class="block mt-1 w-full" type="text"
+                            name="project_title_three" :value="old('project_title_three')" required />
+                        <x-input-error :messages="$errors->get('project_title_three')" class="mt-2" />
+                    </div>
+
+                    <!-- Project Technologies Three -->
+                    <div>
+                        <x-input-label for="project_technologies_three" :value="__('Project Technologies Three')" />
+                        <x-text-input id="project_technologies_three" class="block mt-1 w-full" type="text"
+                            name="project_technologies_three" :value="old('project_technologies_three')" required />
+                        <x-input-error :messages="$errors->get('project_technologies_three')" class="mt-2" />
+                    </div>
+
+                    <!-- Project URL Three -->
+                    <div>
+                        <x-input-label for="project_url_three" :value="__('Project URL Three')" />
+                        <x-text-input id="project_url_three" class="block mt-1 w-full" type="url"
+                            name="project_url_three" :value="old('project_url_three')" />
+                        <x-input-error :messages="$errors->get('project_url_three')" class="mt-2" />
+                    </div>
+
+                    <!-- Project Description Three -->
+                    <div class="col-span-2">
+                        <x-input-label for="project_description_three" :value="__('Project Description Three')" />
+                        <textarea id="project_description_three"
+                            class="form-input w-full text-gray-800 rounded-md bg-gray-50 border border-gray-300 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-300 p-2 transition duration-200 ease-in-out shadow-sm hover:border-blue-400"
+                            name="project_description_three" required>{{ old('project_description_three') }}</textarea>
+                        <x-input-error :messages="$errors->get('project_description_three')" class="mt-2" />
+                    </div>
+
+                    <!-- Project Title Four -->
+                    <div>
+                        <x-input-label for="project_title_four" :value="__('Project Title Four')" />
+                        <x-text-input id="project_title_four" class="block mt-1 w-full" type="text"
+                            name="project_title_four" :value="old('project_title_four')" required />
+                        <x-input-error :messages="$errors->get('project_title_four')" class="mt-2" />
+                    </div>
+
+                    <!-- Project Technologies Four -->
+                    <div>
+                        <x-input-label for="project_technologies_four" :value="__('Project Technologies Four')" />
+                        <x-text-input id="project_technologies_four" class="block mt-1 w-full" type="text"
+                            name="project_technologies_four" :value="old('project_technologies_four')" required />
+                        <x-input-error :messages="$errors->get('project_technologies_four')" class="mt-2" />
+                    </div>
+
+                    <!-- Project URL Four -->
+                    <div>
+                        <x-input-label for="project_url_four" :value="__('Project URL Four')" />
+                        <x-text-input id="project_url_four" class="block mt-1 w-full" type="url"
+                            name="project_url_four" :value="old('project_url_four')" />
+                        <x-input-error :messages="$errors->get('project_url_four')" class="mt-2" />
+                    </div>
+
+                    <!-- Project Description Four -->
+                    <div class="col-span-2">
+                        <x-input-label for="project_description_four" :value="__('Project Description Four')" />
+                        <textarea id="project_description_four"
+                            class="form-input w-full text-gray-800 rounded-md bg-gray-50 border border-gray-300 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-300 p-2 transition duration-200 ease-in-out shadow-sm hover:border-blue-400"
+                            name="project_description_four" required>{{ old('project_description_four') }}</textarea>
+                        <x-input-error :messages="$errors->get('project_description_four')" class="mt-2" />
+                    </div>
+
+                    <!-- Project Title Five -->
+                    <div>
+                        <x-input-label for="project_title_five" :value="__('Project Title Five')" />
+                        <x-text-input id="project_title_five" class="block mt-1 w-full" type="text"
+                            name="project_title_five" :value="old('project_title_five')" required />
+                        <x-input-error :messages="$errors->get('project_title_five')" class="mt-2" />
+                    </div>
+
+                    <!-- Project Technologies Five -->
+                    <div>
+                        <x-input-label for="project_technologies_five" :value="__('Project Technologies Five')" />
+                        <x-text-input id="project_technologies_five" class="block mt-1 w-full" type="text"
+                            name="project_technologies_five" :value="old('project_technologies_five')" required />
+                        <x-input-error :messages="$errors->get('project_technologies_five')" class="mt-2" />
+                    </div>
+
+                    <!-- Project URL Five -->
+                    <div>
+                        <x-input-label for="project_url_five" :value="__('Project URL Five')" />
+                        <x-text-input id="project_url_five" class="block mt-1 w-full" type="url"
+                            name="project_url_five" :value="old('project_url_five')" />
+                        <x-input-error :messages="$errors->get('project_url_five')" class="mt-2" />
+                    </div>
+
+                    <!-- Project Description Five -->
+                    <div class="col-span-2">
+                        <x-input-label for="project_description_five" :value="__('Project Description Five')" />
+                        <textarea id="project_description_five"
+                            class="form-input w-full text-gray-800 rounded-md bg-gray-50 border border-gray-300 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-blue-300 p-2 transition duration-200 ease-in-out shadow-sm hover:border-blue-400"
+                            name="project_description_five" required>{{ old('project_description_five') }}</textarea>
+                        <x-input-error :messages="$errors->get('project_description_five')" class="mt-2" />
+                    </div>
+
+                    <!-- Social Platform One -->
+                    <div>
+                        <x-input-label for="social_platform_one" :value="__('Social Platform One')" />
+                        <x-text-input id="social_platform_one" class="block mt-1 w-full" type="text"
+                            name="social_platform_one" :value="old('social_platform_one')" required />
+                        <x-input-error :messages="$errors->get('social_platform_one')" class="mt-2" />
+                    </div>
+
+                    <!-- Social Profile Type One -->
+                    <div>
+                        <x-input-label for="social_profile_type_one" :value="__('Social Profile Type One')" />
+                        <x-text-input id="social_profile_type_one" class="block mt-1 w-full" type="text"
+                            name="social_profile_type_one" :value="old('social_profile_type_one')" required />
+                        <x-input-error :messages="$errors->get('social_profile_type_one')" class="mt-2" />
+                    </div>
+
+                    <!-- Social URL One -->
+                    <div>
+                        <x-input-label for="social_url_one" :value="__('Social URL One')" />
+                        <x-text-input id="social_url_one" class="block mt-1 w-full" type="url"
+                            name="social_url_one" :value="old('social_url_one')" required />
+                        <x-input-error :messages="$errors->get('social_url_one')" class="mt-2" />
+                    </div>
+
+                    <!-- Social Platform Two -->
+                    <div>
+                        <x-input-label for="social_platform_two" :value="__('Social Platform Two')" />
+                        <x-text-input id="social_platform_two" class="block mt-1 w-full" type="text"
+                            name="social_platform_two" :value="old('social_platform_two')" required />
+                        <x-input-error :messages="$errors->get('social_platform_two')" class="mt-2" />
+                    </div>
+
+                    <!-- Social Profile Type Two -->
+                    <div>
+                        <x-input-label for="social_profile_type_two" :value="__('Social Profile Type Two')" />
+                        <x-text-input id="social_profile_type_two" class="block mt-1 w-full" type="text"
+                            name="social_profile_type_two" :value="old('social_profile_type_two')" required />
+                        <x-input-error :messages="$errors->get('social_profile_type_two')" class="mt-2" />
+                    </div>
+
+                    <!-- Social URL Two -->
+                    <div>
+                        <x-input-label for="social_url_two" :value="__('Social URL Two')" />
+                        <x-text-input id="social_url_two" class="block mt-1 w-full" type="url"
+                            name="social_url_two" :value="old('social_url_two')" required />
+                        <x-input-error :messages="$errors->get('social_url_two')" class="mt-2" />
+                    </div>
+
+                    <!-- Social Platform Three -->
+                    <div>
+                        <x-input-label for="social_platform_three" :value="__('Social Platform Three')" />
+                        <x-text-input id="social_platform_three" class="block mt-1 w-full" type="text"
+                            name="social_platform_three" :value="old('social_platform_three')" required />
+                        <x-input-error :messages="$errors->get('social_platform_three')" class="mt-2" />
+                    </div>
+
+                    <!-- Social Profile Type Three -->
+                    <div>
+                        <x-input-label for="social_profile_type_three" :value="__('Social Profile Type Three')" />
+                        <x-text-input id="social_profile_type_three" class="block mt-1 w-full" type="text"
+                            name="social_profile_type_three" :value="old('social_profile_type_three')" required />
+                        <x-input-error :messages="$errors->get('social_profile_type_three')" class="mt-2" />
+                    </div>
+
+                    <!-- Social URL Three -->
+                    <div>
+                        <x-input-label for="social_url_three" :value="__('Social URL Three')" />
+                        <x-text-input id="social_url_three" class="block mt-1 w-full" type="url"
+                            name="social_url_three" :value="old('social_url_three')" required />
+                        <x-input-error :messages="$errors->get('social_url_three')" class="mt-2" />
+                    </div>
+
 
                     <!-- Skills -->
                     <div class="col-span-2 mt-4">

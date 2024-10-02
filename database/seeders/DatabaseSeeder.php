@@ -16,7 +16,8 @@ class DatabaseSeeder extends Seeder
             PassportTokenSeeder::class,
             AdminSeeder::class,
             RolePermissionSeeder::class,
-            CategorySeeder::class
+            CategorySeeder::class,
+            ResumeProfileSeeder::class,
         ]);
     }
 }

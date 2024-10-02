@@ -69,102 +69,344 @@
                     <dd class="text-gray-800">{{ $resumeProfile->website }}</dd>
                 </div>
 
-                <!-- Degree -->
-                <div class="py-4 flex justify-between items-start">
-                    <dt class="text-gray-600 font-medium">Degree:</dt>
-                    <dd class="text-gray-800">{{ $resumeProfile->degree }}</dd>
+                <div class="py-4">
+                    <h3 class="text-lg font-semibold">Education One</h3>
+
+                    <!-- Degree One -->
+                    <div class="py-4 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Degree One:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->degree_one }}</dd>
+                    </div>
+
+                    <!-- Institution One -->
+                    <div class="py-4 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Institution One:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->institution_one }}</dd>
+                    </div>
+
+                    <!-- Start Year One -->
+                    <div class="py-4 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Start Year One:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->start_year_one }}</dd>
+                    </div>
+
+                    <!-- End Year One -->
+                    <div class="py-4 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">End Year One:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->end_year_one }}</dd>
+                    </div>
+                </div>
+                <div class="py-4">
+                    <h3 class="text-lg font-semibold">Education Two</h3>
+                    <!-- Degree Two -->
+                    <div class="py-4 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Degree Two:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->degree_two }}</dd>
+                    </div>
+
+                    <!-- Institution Two -->
+                    <div class="py-4 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Institution Two:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->institution_two }}</dd>
+                    </div>
+
+                    <!-- Start Year Two -->
+                    <div class="py-4 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Start Year Two:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->start_year_two }}</dd>
+                    </div>
+
+                    <!-- End Year Two -->
+                    <div class="py-4 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">End Year Two:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->end_year_two }}</dd>
+                    </div>
+                </div>
+                <div class="py-4">
+                    <h3 class="text-lg font-semibold">Education Two</h3>
+                    <!-- Degree Three -->
+                    <div class="py-4 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Degree Three:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->degree_three }}</dd>
+                    </div>
+
+                    <!-- Institution Three -->
+                    <div class="py-4 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Institution Three:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->institution_three }}</dd>
+                    </div>
+
+                    <!-- Start Year Three -->
+                    <div class="py-4 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Start Year Three:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->start_year_three }}</dd>
+                    </div>
+
+                    <!-- End Year Three -->
+                    <div class="py-4 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">End Year Three:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->end_year_three }}</dd>
+                    </div>
                 </div>
 
-                <!-- Institution -->
-                <div class="py-4 flex justify-between items-start">
-                    <dt class="text-gray-600 font-medium">Institution:</dt>
-                    <dd class="text-gray-800">{{ $resumeProfile->institution }}</dd>
+                <!-- Work Experience One -->
+                <div class="py-4">
+                    <h3 class="text-lg font-semibold">Work Experience One</h3>
+                    <!-- Work Position -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Work Position:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->work_position_one }}</dd>
+                    </div>
+
+                    <!-- Company -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Company:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->company_one }}</dd>
+                    </div>
+
+                    <!-- Work Start Year -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Work Start Year:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->work_start_year_one }}</dd>
+                    </div>
+
+                    <!-- Work End Year -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Work End Year:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->work_end_year_one }}</dd>
+                    </div>
+
+                    <!-- Work Description -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Work Description:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->work_description_one }}</dd>
+                    </div>
                 </div>
 
-                <!-- Start Year -->
-                <div class="py-4 flex justify-between items-start">
-                    <dt class="text-gray-600 font-medium">Start Year:</dt>
-                    <dd class="text-gray-800">{{ $resumeProfile->start_year }}</dd>
+                <!-- Work Experience Two -->
+                <div class="py-4">
+                    <h3 class="text-lg font-semibold">Work Experience Two</h3>
+                    <!-- Work Position -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Work Position:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->work_position_two }}</dd>
+                    </div>
+
+                    <!-- Company -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Company:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->company_two }}</dd>
+                    </div>
+
+                    <!-- Work Start Year -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Work Start Year:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->work_start_year_two }}</dd>
+                    </div>
+
+                    <!-- Work End Year -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Work End Year:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->work_end_year_two }}</dd>
+                    </div>
+
+                    <!-- Work Description -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Work Description:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->work_description_two }}</dd>
+                    </div>
                 </div>
 
-                <!-- End Year -->
-                <div class="py-4 flex justify-between items-start">
-                    <dt class="text-gray-600 font-medium">End Year:</dt>
-                    <dd class="text-gray-800">{{ $resumeProfile->end_year }}</dd>
+                <!-- Work Experience Three -->
+                <div class="py-4">
+                    <h3 class="text-lg font-semibold">Work Experience Three</h3>
+                    <!-- Work Position -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Work Position:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->work_position_three }}</dd>
+                    </div>
+
+                    <!-- Company -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Company:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->company_three }}</dd>
+                    </div>
+
+                    <!-- Work Start Year -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Work Start Year:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->work_start_year_three }}</dd>
+                    </div>
+
+                    <!-- Work End Year -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Work End Year:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->work_end_year_three }}</dd>
+                    </div>
+
+                    <!-- Work Description -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Work Description:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->work_description_three }}</dd>
+                    </div>
                 </div>
 
-                <!-- Work Position -->
-                <div class="py-4 flex justify-between items-start">
-                    <dt class="text-gray-600 font-medium">Work Position:</dt>
-                    <dd class="text-gray-800">{{ $resumeProfile->work_position }}</dd>
+                <!-- Project One -->
+                <div class="py-4">
+                    <h3 class="text-lg font-semibold">Project One</h3>
+                    <!-- Project Title -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Project Title:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->project_title_one }}</dd>
+                    </div>
+
+                    <!-- Project Technologies -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Project Technologies:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->project_technologies_one }}</dd>
+                    </div>
+
+                    <!-- Project URL -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Project URL:</dt>
+                        <dd class="text-gray-800"><a href="{{ $resumeProfile->project_url_one }}"
+                                class="text-indigo-600 hover:underline">{{ $resumeProfile->project_url_one }}</a></dd>
+                    </div>
+
+                    <!-- Project Description -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Project Description:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->project_description_one }}</dd>
+                    </div>
                 </div>
 
-                <!-- Company -->
-                <div class="py-4 flex justify-between items-start">
-                    <dt class="text-gray-600 font-medium">Company:</dt>
-                    <dd class="text-gray-800">{{ $resumeProfile->company }}</dd>
+                <!-- Project Two -->
+                <div class="py-4">
+                    <h3 class="text-lg font-semibold">Project Two</h3>
+                    <!-- Project Title -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Project Title:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->project_title_two }}</dd>
+                    </div>
+
+                    <!-- Project Technologies -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Project Technologies:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->project_technologies_two }}</dd>
+                    </div>
+
+                    <!-- Project URL -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Project URL:</dt>
+                        <dd class="text-gray-800"><a href="{{ $resumeProfile->project_url_two }}"
+                                class="text-indigo-600 hover:underline">{{ $resumeProfile->project_url_two }}</a></dd>
+                    </div>
+
+                    <!-- Project Description -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Project Description:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->project_description_two }}</dd>
+                    </div>
                 </div>
 
-                <!-- Work Start Year -->
-                <div class="py-4 flex justify-between items-start">
-                    <dt class="text-gray-600 font-medium">Work Start Year:</dt>
-                    <dd class="text-gray-800">{{ $resumeProfile->work_start_year }}</dd>
+                <!-- Project Three -->
+                <div class="py-4">
+                    <h3 class="text-lg font-semibold">Project Three</h3>
+                    <!-- Project Title -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Project Title:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->project_title_three }}</dd>
+                    </div>
+
+                    <!-- Project Technologies -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Project Technologies:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->project_technologies_three }}</dd>
+                    </div>
+
+                    <!-- Project URL -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Project URL:</dt>
+                        <dd class="text-gray-800"><a href="{{ $resumeProfile->project_url_three }}"
+                                class="text-indigo-600 hover:underline">{{ $resumeProfile->project_url_three }}</a>
+                        </dd>
+                    </div>
+
+                    <!-- Project Description -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Project Description:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->project_description_three }}</dd>
+                    </div>
                 </div>
 
-                <!-- Work End Year -->
-                <div class="py-4 flex justify-between items-start">
-                    <dt class="text-gray-600 font-medium">Work End Year:</dt>
-                    <dd class="text-gray-800">{{ $resumeProfile->work_end_year }}</dd>
+                <!-- Social Profile One -->
+                <div class="py-4">
+                    <h3 class="text-lg font-semibold">Social Profile One</h3>
+                    <!-- Social Platform -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Social Platform:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->social_platform_one }}</dd>
+                    </div>
+
+                    <!-- Social Profile Type -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Social Profile Type:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->social_profile_type_one }}</dd>
+                    </div>
+
+                    <!-- Social URL -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Social URL:</dt>
+                        <dd class="text-gray-800"><a href="{{ $resumeProfile->social_url_one }}"
+                                class="text-indigo-600 hover:underline">{{ $resumeProfile->social_url_one }}</a></dd>
+                    </div>
                 </div>
 
-                <!-- Work Description -->
-                <div class="py-4 flex justify-between items-start">
-                    <dt class="text-gray-600 font-medium">Work Description:</dt>
-                    <dd class="text-gray-800">{{ $resumeProfile->work_description }}</dd>
+                <!-- Social Profile Two -->
+                <div class="py-4">
+                    <h3 class="text-lg font-semibold">Social Profile Two</h3>
+                    <!-- Social Platform -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Social Platform:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->social_platform_two }}</dd>
+                    </div>
+
+                    <!-- Social Profile Type -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Social Profile Type:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->social_profile_type_two }}</dd>
+                    </div>
+
+                    <!-- Social URL -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Social URL:</dt>
+                        <dd class="text-gray-800"><a href="{{ $resumeProfile->social_url_two }}"
+                                class="text-indigo-600 hover:underline">{{ $resumeProfile->social_url_two }}</a></dd>
+                    </div>
                 </div>
 
-                <!-- Project Title -->
-                <div class="py-4 flex justify-between items-start">
-                    <dt class="text-gray-600 font-medium">Project Title:</dt>
-                    <dd class="text-gray-800">{{ $resumeProfile->project_title }}</dd>
-                </div>
+                <!-- Social Profile Three -->
+                <div class="py-4">
+                    <h3 class="text-lg font-semibold">Social Profile Three</h3>
+                    <!-- Social Platform -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Social Platform:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->social_platform_three }}</dd>
+                    </div>
 
-                <!-- Project Technologies -->
-                <div class="py-4 flex justify-between items-start">
-                    <dt class="text-gray-600 font-medium">Project Technologies:</dt>
-                    <dd class="text-gray-800">{{ $resumeProfile->project_technologies }}</dd>
-                </div>
+                    <!-- Social Profile Type -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Social Profile Type:</dt>
+                        <dd class="text-gray-800">{{ $resumeProfile->social_profile_type_three }}</dd>
+                    </div>
 
-                <!-- Project URL -->
-                <div class="py-4 flex justify-between items-start">
-                    <dt class="text-gray-600 font-medium">Project URL:</dt>
-                    <dd class="text-gray-800"><a href="{{ $resumeProfile->project_url }}"
-                            class="text-indigo-600 hover:underline">{{ $resumeProfile->project_url }}</a></dd>
-                </div>
-
-                <!-- Project Description -->
-                <div class="py-4 flex justify-between items-start">
-                    <dt class="text-gray-600 font-medium">Project Description:</dt>
-                    <dd class="text-gray-800">{{ $resumeProfile->project_description }}</dd>
-                </div>
-
-                <!-- Social Platform -->
-                <div class="py-4 flex justify-between items-start">
-                    <dt class="text-gray-600 font-medium">Social Platform:</dt>
-                    <dd class="text-gray-800">{{ $resumeProfile->social_platform }}</dd>
-                </div>
-
-                <!-- Social Profile Type -->
-                <div class="py-4 flex justify-between items-start">
-                    <dt class="text-gray-600 font-medium">Social Profile Type:</dt>
-                    <dd class="text-gray-800">{{ $resumeProfile->social_profile_type }}</dd>
-                </div>
-
-                <!-- Social URL -->
-                <div class="py-4 flex justify-between items-start">
-                    <dt class="text-gray-600 font-medium">Social URL:</dt>
-                    <dd class="text-gray-800"><a href="{{ $resumeProfile->social_url }}"
-                            class="text-indigo-600 hover:underline">{{ $resumeProfile->social_url }}</a></dd>
+                    <!-- Social URL -->
+                    <div class="py-2 flex justify-between items-start">
+                        <dt class="text-gray-600 font-medium">Social URL:</dt>
+                        <dd class="text-gray-800"><a href="{{ $resumeProfile->social_url_three }}"
+                                class="text-indigo-600 hover:underline">{{ $resumeProfile->social_url_three }}</a>
+                        </dd>
+                    </div>
                 </div>
 
                 <!-- Skills -->
